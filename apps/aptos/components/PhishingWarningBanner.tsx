@@ -43,8 +43,8 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
   const [, hideBanner] = usePhishingBanner()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain: DOMAIN })
-    return warningText.split(/(https:\/\/aptos.pancakeswap.finance)/g)
+    const warningText = t("please make sure you're visiting https://app.biophilia.finance/ - check the URL carefully.", { domain: DOMAIN })
+    return warningText.split(/(https:\/\/app.biophillia.com)/g)
   }, [t])
   const warningTextComponent = (
     <>
